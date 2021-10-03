@@ -8,7 +8,7 @@ import { SearchPage } from "./pages/Search";
 
 export const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/gif-search">
       <div className="App">
         <p>
           <Link to="/">Trending</Link>
