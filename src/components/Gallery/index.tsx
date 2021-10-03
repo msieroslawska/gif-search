@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './Gallery.css';
-import { Image } from './types';
+import './index.css';
+import { Image } from '../../types';
 
 interface Props {
   images?: Image[];
@@ -17,7 +17,7 @@ export const Gallery: React.FC<Props> = ({ images }) => {
       {images.map(({ id, src, title }) => (
         <div key={id}>
           <img src={src} alt={title} />
-          <p>{title}</p>
+          <p className="Gallery-caption">{title}</p>
         </div>
       ))}
     </div>
